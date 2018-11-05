@@ -1,0 +1,64 @@
+*{
+	background: rgb(50,40,29);
+	color: white;
+	font-family: 'Quicksand', sans-serif;
+}
+
+.header{
+	text-align: center;
+}
+
+.responsive{
+	max-width: 100%;
+	display: block;
+	height: auto;
+}
+
+
+.contents{
+	max-width: 70%;
+	margin-left: 15%;
+}
+
+.contents-text{
+	margin-left: -7.5%;
+}
+
+.blinking-first{
+    animation:blinkingTextFirst 1.5s infinite;
+}
+@keyframes blinkingTextFirst{
+    0%{     color: #ff9933;    }
+    49%{    color: transparent; }
+    50%{    color: transparent; }
+    99%{    color: transparent; }
+    100%{   color: transparent; }
+}
+
+.blinking-second{
+    animation:blinkingTextSecond 1.5s infinite;
+}
+@keyframes blinkingTextSecond{
+    0%{     color: transparent; }
+    40%{	color: white;		}
+    99%{    color: transparent; }
+    100%{   color: transparent; }
+}
+
+.blinking-third{
+    animation:blinkingTextThird 1.5s infinite;
+}
+@keyframes blinkingTextThird{
+    0%{     color: transparent;    }
+    49%{    color: transparent; }
+    50%{    color: transparent; }
+    65%{    color: green; }
+    100%{   color: green; }
+}
+
+.footer{
+	text-align: center;
+}
+#img-caption{
+	text-align: center;
+}
