@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title><strong>Survey Form</strong></title>
+	<link rel="stylesheet" type="text/css" href="survey_style.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Sawarabi+Mincho" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<h1 id="title"><strong>Survey Form</strong></h1>
+	</header>
+
+	<form id="survey_form">
+		<h2 id="description"><strong>Let us know</strong></h2>
+
+		<label class="query" id="name_label" for="name">Name</label>
+			<input type="text" class="answer" id="name" placeholder="Enter your name" required><br>
+		<label class="query" id="email_label" for="email">Email</label>
+			<input type="email" class="answer" id="email" placeholder="Enter your email" required><br>
+		<label class="query" id="age_label" for="number">Age</label>
+			<input type="number" class="answer" id="number" placeholder="Enter your age" type="number" min="1" max="100" required><br>
+		<label class="query" id="designation_label" for="text">Designation</label>
+			<select class="answer" id="dropdown">
+				<option>Student</option>
+				<option>Intern</option>
+				<option>Employee</option>
+			</select>
+
+		<p>How likely would you recommend us?</p>
+
+		<section class="answer" id="radio">
+			<input type="radio" name="radio-button" value="maybe">Maybe<br>
+			<input type="radio" name="radio-button" value="definitely">Definitely<br>
+			<input type="radio" name="radio-button" value="not sure">Not Sure<br>
+		</section><br>
+
+		<p>What should we improve?</p>
+		<section class="answer" id="checkbox">
+			<input type="checkbox" name="checkbox-button" value="front-end">Front End<br>
+			<input type="checkbox" name="checkbox-button" value="back-end">Back End<br>
+			<input type="checkbox" name="checkbox-button" value="gui">GUI<br> 
+		</section><br>
+
+		<p>Comments or Suggestions</p>
+		<textarea class="answer" id="comment-label" placeholder="Any Comments??"></textarea>
+
+		<button id="submit" type="submit">Submit</button>
+
+	</form>
+</body>
+</html>
